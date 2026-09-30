@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soluciones de Chatbots Automatizados</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        .typing-dot {
+            animation: typing 1.4s infinite ease-in-out;
+            fill: currentColor;
+        }
+        .typing-dot:nth-child(1) { animation-delay: 0s; }
+        .typing-dot:nth-child(2) { animation-delay: 0.2s; }
+        .typing-dot:nth-child(3) { animation-delay: 0.4s; }
+        @keyframes typing {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-3px); }
+        }
+        .chat-scroll::-webkit-scrollbar { width: 6px; }
+        .chat-scroll::-webkit-scrollbar-track { background: transparent; }
+        .chat-scroll::-webkit-scrollbar-thumb { background: #4b5563; border-radius: 10px; }
+    </style>
+</head>
+<body class="bg-gray-900 text-white font-sans antialiased overflow-x-hidden">
+
+    <!-- NAVBAR -->
+    <nav class="fixed w-full z-50 bg-[#0b1121]/90 backdrop-blur-md border-b border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0 flex items-center gap-3">
+                    <img src="image_17dfdf.png" alt="BotSolutions Logo" class="h-12 w-auto rounded-full bg-white/10 p-1">
+                    <span class="font-bold text-xl tracking-tight text-white">BotSolutions</span>
+                </div>
+                <div>
+                    <a href="#contacto" class="inline-flex items-center justify-center px-6 py-2.5 border border-transparent text-sm font-medium rounded-full text-white bg-[#4d7efb] hover:bg-blue-600 transition-colors shadow-lg shadow-blue-500/30">
+                        Contáctanos
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <header class="relative w-full h-[70vh] flex items-center justify-center overflow-hidden">
+        <video autoplay loop muted playsinline class="absolute z-0 w-auto min-w-full min-h-full max-w-none object-cover">
+            <source src="https://assets.codepen.io/3364143/7btrrd.mp4" type="video/mp4">
+        </video>
+        <div class="absolute z-10 inset-0 bg-[#0b1121]/60 backdrop-blur-sm"></div>
+        <div class="relative z-20 text-center px-4 max-w-4xl mx-auto">
+            <h1 class="text-5xl md:text-6xl font-bold tracking-tight mb-2">Soluciones de Chatbots</h1>
+            <h2 class="text-4xl md:text-5xl font-bold mb-6" style="color: #7c9aff;">Automatizados y Eficientes</h2>
+            
+            <!-- NUEVO TEXTO PERSUASIVO -->
+            <p class="text-lg md:text-xl text-gray-200 mb-6 max-w-3xl mx-auto leading-relaxed">
+                ¿Las tareas repetitivas te quitan tiempo valioso? <strong>Nosotros tenemos la solución.</strong> Automatizamos tus procesos operativos para que enfoques tu energía en escalar tu negocio. Hacemos que la tecnología trabaje por ti.
+            </p>
+
+            <!-- ETIQUETAS TECNOLÓGICAS (BADGES) -->
+            <div class="flex flex-wrap justify-center gap-3 mb-10">
+                <span class="flex items-center gap-2 bg-[#0b1121]/80 border border-[#4d7efb]/40 backdrop-blur-md px-5 py-2.5 rounded-full text-sm font-medium text-green-400 shadow-[0_0_15px_rgba(74,222,128,0.15)]">
+                    <i class="fab fa-whatsapp text-lg"></i> Bots WhatsApp & Redes
+                </span>
+                <span class="flex items-center gap-2 bg-[#0b1121]/80 border border-[#4d7efb]/40 backdrop-blur-md px-5 py-2.5 rounded-full text-sm font-medium text-blue-400 shadow-[0_0_15px_rgba(96,165,250,0.15)]">
+                    <i class="fas fa-envelope-open-text text-lg"></i> Automatización de Correos
+                </span>
+                <span class="flex items-center gap-2 bg-[#0b1121]/80 border border-[#4d7efb]/40 backdrop-blur-md px-5 py-2.5 rounded-full text-sm font-medium text-purple-400 shadow-[0_0_15px_rgba(192,132,252,0.15)]">
+                    <i class="fas fa-database text-lg"></i> Integración con Bases de Datos
+                </span>
+            </div>
+
+            <a href="#demos" class="inline-block bg-[#4d7efb] text-white font-semibold py-3 px-8 rounded-full transition-all duration-300 hover:scale-110 hover:bg-blue-600 shadow-lg shadow-blue-500/30">
+                Ver Demos
+            </a>
+        </div>
+    </header>
+
+    <main id="demos" class="max-w-7xl mx-auto py-20 px-6 space-y-32">
+        
+        <!-- 1. DIMO BOT -->
+        <section class="flex flex-col lg:flex-row items-center gap-12 demo-section" data-bot="dimo">
+            <div class="lg:w-1/2 space-y-6">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-green-500/20 text-green-400 text-sm font-semibold">
+                    <i class="fas fa-graduation-cap"></i> CRM & Automatización de Pagos
+                </div>
+                <h3 class="text-3xl md:text-4xl font-bold">Dimo BOT 🤖</h3>
+                <p class="text-gray-300 text-lg">
+                    Asistente virtual para la Universidad de Colombia que gestiona el alquiler de trajes académicos.
+                </p>
+                <div class="bg-gray-800 p-6 rounded-xl border border-gray-700">
+                    <h4 class="text-xl font-bold text-white mb-4">💡 El Valor para el Cliente</h4>
+                    <ul class="space-y-4 text-gray-300">
+                        <li class="flex items-start gap-3"><i class="fas fa-database text-green-400 mt-1"></i><span><strong>Conexión a BD:</strong> Valida identidad consultando registros con la cédula.</span></li>
+                        <li class="flex items-start gap-3"><i class="fas fa-calculator text-green-400 mt-1"></i><span><strong>Asignación Dinámica:</strong> Calcula talla según la estatura.</span></li>
+                        <li class="flex items-start gap-3"><i class="fas fa-credit-card text-green-400 mt-1"></i><span><strong>Pagos y Reportes:</strong> Confirma pagos y genera reportes diarios.</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="lg:w-1/2 flex justify-center w-full">
+                <div class="relative w-[340px] h-[680px] bg-gray-900 border-[10px] border-gray-800 rounded-[3rem] shadow-2xl overflow-hidden flex flex-col">
+                    <div class="absolute top-0 inset-x-0 h-6 bg-gray-800 rounded-b-3xl w-40 mx-auto z-20"></div>
+                    <div class="bg-[#075e54] text-white p-4 pt-8 flex items-center gap-3 z-10 shadow-md">
+                        <div class="w-10 h-10 rounded-full bg-[#128c7e] flex items-center justify-center overflow-hidden text-2xl shadow-sm">
+                            🤖
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-sm leading-tight">Dimo BOT 🤖</h4>
+                            <p class="text-xs text-green-200">En línea</p>
+                        </div>
+                    </div>
+                    <div class="flex-1 bg-[#efeae2] p-4 overflow-y-auto chat-scroll flex flex-col gap-3 relative" id="chat-dimo" style="background-image: url('https://user-images.githubusercontent.com/15075759/28719144-86dc0f70-73b1-11e7-911d-60d70fcded21.png');"></div>
+                    <div class="bg-[#f0f2f5] p-3 flex items-center gap-2">
+                        <div class="flex-1 bg-white rounded-full px-4 py-2 text-sm text-gray-400 shadow-sm">Escribe un mensaje...</div>
+                        <div class="w-10 h-10 bg-[#128c7e] rounded-full flex items-center justify-center text-white shadow-sm"><i class="fas fa-paper-plane"></i></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. BOTAI (Dentsalud) -->
+        <section class="flex flex-col lg:flex-row-reverse items-center gap-12 demo-section" data-bot="botai">
+            <div class="lg:w-1/2 space-y-6">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/20 text-blue-400 text-sm font-semibold">
+                    <i class="fas fa-calendar-check"></i> Agendamiento Inteligente
+                </div>
+                <h3 class="text-3xl md:text-4xl font-bold">BOTAI 🦷</h3>
+                <p class="text-gray-300 text-lg">
+                    Asistente para la clínica <strong>Dentsalud</strong>. Se encarga de recepcionar pacientes, verificar horarios y agendar directamente en el calendario.
+                </p>
+                <div class="bg-gray-800 p-6 rounded-xl border border-gray-700">
+                    <h4 class="text-xl font-bold text-white mb-4">💡 El Valor para el Cliente</h4>
+                    <ul class="space-y-4 text-gray-300">
+                        <li class="flex items-start gap-3"><i class="fab fa-google text-blue-400 mt-1"></i><span><strong>Integración Google Calendar:</strong> Lee disponibilidad en tiempo real y agenda sin colisiones.</span></li>
+                        <li class="flex items-start gap-3"><i class="fas fa-user-md text-blue-400 mt-1"></i><span><strong>Derivación a Humanos:</strong> Si el usuario lo requiere, transfiere la conversación a un asesor médico.</span></li>
+                        <li class="flex items-start gap-3"><i class="fas fa-clock text-blue-400 mt-1"></i><span><strong>Atención 24/7:</strong> Reduce la carga de recepción automatizando consultas rutinarias y cancelaciones.</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="lg:w-1/2 flex justify-center w-full">
+                <div class="relative w-[340px] h-[680px] bg-gray-900 border-[10px] border-gray-800 rounded-[3rem] shadow-2xl overflow-hidden flex flex-col">
+                    <div class="absolute top-0 inset-x-0 h-6 bg-gray-800 rounded-b-3xl w-40 mx-auto z-20"></div>
+                    <div class="bg-[#005c4b] text-white p-4 pt-8 flex items-center gap-3 z-10 shadow-md">
+                        <div class="w-10 h-10 rounded-full bg-white flex items-center justify-center overflow-hidden">
+                            <img src="https://api.dicebear.com/7.x/shapes/svg?seed=Dentsalud&backgroundColor=0ea5e9" alt="Avatar">
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-sm leading-tight">BOTAI (Dentsalud)</h4>
+                            <p class="text-xs text-blue-200">En línea</p>
+                        </div>
+                    </div>
+                    <div class="flex-1 bg-[#efeae2] p-4 overflow-y-auto chat-scroll flex flex-col gap-3 relative" id="chat-botai" style="background-image: url('https://user-images.githubusercontent.com/15075759/28719144-86dc0f70-73b1-11e7-911d-60d70fcded21.png');"></div>
+                    <div class="bg-[#f0f2f5] p-3 flex items-center gap-2">
+                        <div class="flex-1 bg-white rounded-full px-4 py-2 text-sm text-gray-400 shadow-sm">Escribe un mensaje...</div>
+                        <div class="w-10 h-10 bg-[#00a884] rounded-full flex items-center justify-center text-white shadow-sm"><i class="fas fa-paper-plane"></i></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. CLARO-VTR -->
+        <section class="flex flex-col lg:flex-row items-center gap-12 demo-section" data-bot="clarovtr">
+            <div class="lg:w-1/2 space-y-6">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-red-500/20 text-red-400 text-sm font-semibold">
+                    <i class="fas fa-headset"></i> Soporte Interno B2B
+                </div>
+                <h3 class="text-3xl md:text-4xl font-bold">Mesa de Ayuda Claro-VTR</h3>
+                <p class="text-gray-300 text-lg">
+                    Bot interno desarrollado en Google Notebooks. Actúa como un manual interactivo para ejecutivos de servicio técnico que asisten a instaladores en terreno.
+                </p>
+                <div class="bg-gray-800 p-6 rounded-xl border border-gray-700">
+                    <h4 class="text-xl font-bold text-white mb-4">💡 El Valor para el Cliente</h4>
+                    <ul class="space-y-4 text-gray-300">
+                        <li class="flex items-start gap-3"><i class="fas fa-book-open text-red-400 mt-1"></i><span><strong>Claridad Operativa:</strong> Traduce códigos técnicos (ej. NOK-RN 40) en pasos resolutivos claros.</span></li>
+                        <li class="flex items-start gap-3"><i class="fas fa-check-circle text-red-400 mt-1"></i><span><strong>Reducción de Errores:</strong> Disminuye drásticamente los errores humanos durante la asistencia técnica.</span></li>
+                        <li class="flex items-start gap-3"><i class="fas fa-tags text-red-400 mt-1"></i><span><strong>Categorización:</strong> Ayuda a tipificar y levantar tickets correctamente en los sistemas de telecomunicaciones.</span></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="lg:w-1/2 flex justify-center w-full">
+                <div class="w-full max-w-lg h-[500px] bg-[#0f172a] border border-gray-700 rounded-xl shadow-2xl overflow-hidden flex flex-col">
+                    <div class="bg-[#1e293b] text-white p-3 border-b border-gray-700 flex items-center justify-between">
+                        <div class="flex items-center gap-3">
+                            <div class="w-8 h-8 rounded-md bg-red-600 flex items-center justify-center text-white font-bold text-xs">VTR</div>
+                            <div>
+                                <h4 class="font-bold text-sm">Asistente Técnico v2.1</h4>
+                                <p class="text-[10px] text-gray-400">Terminal Activo</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-1.5">
+                            <div class="w-3 h-3 rounded-full bg-gray-500"></div>
+                            <div class="w-3 h-3 rounded-full bg-gray-500"></div>
+                            <div class="w-3 h-3 rounded-full bg-gray-500"></div>
+                        </div>
+                    </div>
+                    <div class="flex-1 p-4 overflow-y-auto chat-scroll flex flex-col gap-4" id="chat-clarovtr"></div>
+                    <div class="bg-[#1e293b] p-3 border-t border-gray-700 flex items-center gap-3">
+                        <div class="flex-1 bg-[#0f172a] border border-gray-600 rounded-md px-3 py-2 text-sm text-gray-400 font-mono">
+                            Ingresar código de error...
+                        </div>
+                        <button class="bg-red-600 hover:bg-red-700 text-white rounded-md px-4 py-2 text-sm font-semibold transition">
+                            Consultar
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER & CONTACTO -->
+    <footer id="contacto" class="bg-[#0b1121] border-t border-gray-800 pt-16 pb-8">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-24 mb-12">
+                
+                <!-- Info & Logo -->
+                <div class="space-y-6">
+                    <div class="flex items-center gap-3">
+                        <img src="image_17dfdf.png" alt="BotSolutions Logo" class="h-16 w-auto rounded-full bg-white/10 p-1">
+                        <span class="font-bold text-2xl tracking-tight text-white">BotSolutions</span>
+                    </div>
+                    <p class="text-gray-400 text-lg">
+                        Transformamos horas de trabajo manual en procesos automáticos, eficientes y rentables.
+                    </p>
+                    <div class="pt-4">
+                        <a href="https://wa.me/1234567890" target="_blank" class="inline-flex items-center gap-2 bg-[#25D366] text-white font-semibold py-3 px-6 rounded-full transition-transform hover:scale-105 shadow-lg shadow-green-500/20">
+                            <i class="fab fa-whatsapp text-xl"></i> Chat por WhatsApp
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Formulario -->
+                <div class="bg-gray-900 p-8 rounded-2xl border border-gray-800 shadow-xl">
+                    <h3 class="text-2xl font-bold mb-6">Déjanos tu mensaje</h3>
+                    <form class="space-y-4" onsubmit="event.preventDefault();">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-400 mb-1">Nombre Completo</label>
+                            <input type="text" class="w-full bg-[#1e293b] border border-gray-700 rounded-lg px-4 py-2.5 text-white focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition-colors" placeholder="Ej. Juan Pérez">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-400 mb-1">Correo Electrónico</label>
+                            <input type="email" class="w-full bg-[#1e293b] border border-gray-700 rounded-lg px-4 py-2.5 text-white focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition-colors" placeholder="juan@empresa.com">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-400 mb-1">¿En qué podemos ayudarte?</label>
+                            <textarea rows="3" class="w-full bg-[#1e293b] border border-gray-700 rounded-lg px-4 py-2.5 text-white focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition-colors" placeholder="Me gustaría automatizar..."></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-[#4d7efb] hover:bg-blue-600 text-white font-semibold py-3 rounded-lg transition-colors">
+                            Enviar Mensaje
+                        </button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-gray-500 text-sm">
+                <p>© 2026 BotSolutions. Las simulaciones muestran flujos reales creados para clientes privados.</p>
+                <div class="flex gap-4">
+                    <a href="#" class="hover:text-white transition-colors">Términos</a>
+                    <a href="#" class="hover:text-white transition-colors">Privacidad</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const conversaciones = {
+            dimo: [
+                { sender: 'user', text: '<img src="image_174d7e.png" alt="Togas" class="w-full rounded mb-1 border border-gray-300"><span class="text-gray-800">Hola 👋</span>' },
+                { sender: 'bot', text: 'Soy Dimo BOT 🤖, asistente virtual para el proceso de alquiler del 🎓 traje académico de la Universidad Católica de Colombia.<br><br>Estoy aquí para que tu proceso sea rápido y sencillo ⚡<br><br>Selecciona una opción para comenzar:<br><br>1️⃣ Eres Estudiante<br>2️⃣ Paz y salvo<br>3️⃣ Contactar un asesor<br>4️⃣ Alquiler de traje de calle Hombre' },
+                { sender: 'user', text: '1' },
+                { sender: 'bot', text: 'Perfecto 👍<br><br>Para validar tu registro necesito:<br><br>🪪 Número de cédula, escribe solo números.<br>Por ejemplo: 123456789.' },
+                { sender: 'user', text: '1097332900' },
+                { sender: 'bot', text: '✅ ¡Ok MARIA ANGELICA QUIROGA CRUZ! Estás confirmado(a) en lista 🎓<br><br>De acuerdo a nuestro registro, recibirás tu título como:<br>🎓 ESPECIALISTA EN DERECHO CONSTITUCIONAL Y ADMINISTRATIVO<br><br>¿Confirmas que eres esta persona? Responde SI o NO.' },
+                { sender: 'user', text: 'SI' },
+                { sender: 'bot', text: 'Muy bien 📏<br><br>Ahora necesito tu estatura.<br>Ejemplo: 1.70, 170cm' },
+                { sender: 'user', text: '1.67' },
+                { sender: 'bot', text: 'Perfecto 👍<br><br>Tu talla asignada es: 👔 <strong>L</strong><br><br>Ahora elige tu método de pago:<br>1️⃣ Pago en efectivo en el local<br>2️⃣ Pago en línea con Wompi 💳' },
+                { sender: 'user', text: '2' },
+                { sender: 'bot', text: '💳 <strong>PAGO DEL ALQUILER</strong><br>Para finalizar tu proceso, realiza el pago aquí:<br><br><strong>Total a pagar: $87.590</strong><br><br>🔗 <a href="#" class="text-blue-500 font-medium">Link a Wompi</a>' },
+                { sender: 'bot', text: '¡Excelente noticia, MARIA ANGELICA! 🎓✨<br>Hemos recibido tu pago correctamente y la transacción se encuentra aprobada ✅💳<br><br>¡Felicidades en tu graduación! 🎓🥳', delay: 4000 }
+            ],
+
+            botai: [
+                { sender: 'user', text: '<span class="text-gray-800">Hola, buenos días</span>' },
+                { sender: 'bot', text: '¡Hola! 👋 Bienvenido(a) a la Clínica Dental <strong>Dentsalud</strong>. <br><br>¿En qué te podemos ayudar el día de hoy?<br><br>1️⃣ Generar cita 🗓️<br>2️⃣ Cancelar cita ❌<br>3️⃣ Contactar con un asesor 👨‍💻' },
+                { sender: 'user', text: '1' },
+                { sender: 'bot', text: '¡Perfecto! Vamos a agendar tu cita 🗓️.<br><br>Por favor, indícame para qué día y a qué hora te gustaría asistir (Ej: El próximo martes a las 3:00 PM).' },
+                { sender: 'user', text: 'Para el jueves a las 10:00 am' },
+                { sender: 'bot', text: 'Déjame verificar la disponibilidad en nuestra agenda de Google Calendar... ⏳', delay: 3500 },
+                { sender: 'bot', text: '¡Excelentes noticias! 🎉 <br>Tenemos disponibilidad el <strong>Jueves a las 10:00 AM</strong> con el Dr. Ramírez.<br><br>¿Estás de acuerdo con este horario? Responde SI o NO.' },
+                { sender: 'user', text: 'SI' },
+                { sender: 'bot', text: 'Registrando tu cita en el calendario... 📅', delay: 2000 },
+                { sender: 'bot', text: '✅ <strong>¡Excelente! Estás confirmado(a).</strong><br>Tu cita ha sido programada para el Jueves a las 10:00 AM.<br><br>Te esperamos en la clínica. No olvides:<br>🪥 Llegar 10 minutos antes.<br>🆔 Traer tu documento de identidad.<br><br>¡Gracias por confiar en Dentsalud, estás en las mejores manos! 💙🦷' }
+            ],
+
+            clarovtr: [
+                { sender: 'bot', text: 'Bienvenido al Asistente Técnico de Resoluciones Claro-VTR. 📡<br><br>Por favor, ingrese el código o descripción del error reportado por el instalador en terreno.' },
+                { sender: 'user', text: 'NOK-RN - Error de sistemas, levante un ticket/40-Error interno durante activación.' },
+                { sender: 'bot', text: 'Buscando en la base de conocimiento... 🔍', delay: 1500 },
+                { sender: 'bot', text: '⚠️ <strong>Código Identificado: Error 40 (Error interno durante activación)</strong><br><br>📋 <strong>Procedimiento de resolución:</strong><br><br>1. Por favor realice cambio de equipo ONT.<br>2. Realice la asignación del nuevo dispositivo en el sistema.<br>3. Cancele la intervención asegurada actual.<br>4. Realice la activación de la nueva ONT.<br>5. Ejecute un comando "Retry" en la plataforma OSM.<br><br>✅ Con estos pasos el error quedará resuelto en el sistema y no es necesario escalar un ticket a Nivel 2.' },
+                { sender: 'user', text: 'Perfecto, y si me sale el error: NOK-Error de sistemas, levante un ticket/2-El AccessID solicitado no ha sido activado' },
+                { sender: 'bot', text: '⚠️ <strong>Código Identificado: Error 2 (AccessID no activado)</strong><br><br>📋 <strong>Procedimiento de resolución:</strong><br><br>Este error indica un problema de sincronización desde la central.<br>1. Valide que el AccessID coincida con la orden de trabajo.<br>2. <strong>Levante un ticket categorizado como "Fallo de Sincronización - Sistemas"</strong> para que soporte de Redes lo active manualmente.' }
+            ]
+        };
+
+        const typingIndicatorHTML = `
+            <div class="typing-indicator flex items-center gap-1 p-2 w-12">
+                <svg width="24" height="12" viewBox="0 0 24 12" class="text-gray-400">
+                    <circle cx="4" cy="6" r="3" class="typing-dot" />
+                    <circle cx="12" cy="6" r="3" class="typing-dot" />
+                    <circle cx="20" cy="6" r="3" class="typing-dot" />
+                </svg>
+            </div>
+        `;
+
+        function createMessageElement(msg, theme) {
+            const div = document.createElement('div');
+            
+            if (theme === 'whatsapp') {
+                div.className = `max-w-[85%] rounded-lg p-3 text-sm shadow-sm ${
+                    msg.sender === 'user' 
+                    ? 'bg-[#d9fdd3] text-gray-800 self-end rounded-tr-none' 
+                    : 'bg-white text-gray-800 self-start rounded-tl-none'
+                }`;
+            } else if (theme === 'web-dark') {
+                div.className = `max-w-[85%] rounded-xl p-3 text-sm ${
+                    msg.sender === 'user' 
+                    ? 'bg-blue-600 text-white self-end rounded-br-sm' 
+                    : 'bg-[#1e293b] text-gray-200 self-start rounded-bl-sm border border-gray-700'
+                }`;
+            }
+            
+            div.innerHTML = msg.text;
+            return div;
+        }
+
+        async function playConversation(botId) {
+            const container = document.getElementById(`chat-${botId}`);
+            const messages = conversaciones[botId];
+            const theme = (botId === 'dimo' || botId === 'botai') ? 'whatsapp' : 'web-dark';
+            
+            if (container.hasAttribute('data-played')) return;
+            container.setAttribute('data-played', 'true');
+
+            for (let i = 0; i < messages.length; i++) {
+                const msg = messages[i];
+                
+                if (msg.sender === 'bot') {
+                    const typingDiv = document.createElement('div');
+                    
+                    if (theme === 'whatsapp') {
+                        typingDiv.className = "bg-white self-start rounded-lg rounded-tl-none shadow-sm";
+                    } else {
+                        typingDiv.className = "bg-[#1e293b] self-start rounded-xl rounded-bl-sm border border-gray-700";
+                    }
+                    
+                    typingDiv.innerHTML = typingIndicatorHTML;
+                    container.appendChild(typingDiv);
+                    container.scrollTop = container.scrollHeight;
+                    
+                    const waitTime = msg.delay ? msg.delay : Math.random() * 1000 + 1500;
+                    await new Promise(r => setTimeout(r, waitTime));
+                    
+                    container.removeChild(typingDiv);
+                } else {
+                    await new Promise(r => setTimeout(r, 800));
+                }
+
+                container.appendChild(createMessageElement(msg, theme));
+                container.scrollTop = container.scrollHeight;
+            }
+        }
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const botId = entry.target.getAttribute('data-bot');
+                    playConversation(botId);
+                }
+            });
+        }, { threshold: 0.4 });
+
+        document.querySelectorAll('.demo-section').forEach(section => {
+            observer.observe(section);
+        });
+    </script>
+</body>
+</html>
