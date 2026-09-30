@@ -29,12 +29,14 @@
     <nav class="fixed w-full z-50 bg-[#0b1121]/90 backdrop-blur-md border-b border-gray-800">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-20">
-                <div class="flex-shrink-0 flex items-center gap-3">
-                    <img src="image_17dfdf.png" alt="BotSolutions Logo" class="h-12 w-auto rounded-full bg-white/10 p-1">
-                    <span class="font-bold text-xl tracking-tight text-white">BotSolutions</span>
+                <!-- Ajuste móvil: Ocultar el texto del logo en pantallas muy pequeñas, dejar solo la imagen -->
+                <div class="flex-shrink-0 flex items-center gap-2 sm:gap-3">
+                    <img src="image_17dfdf.png" alt="BotSolutions Logo" class="h-10 sm:h-12 w-auto rounded-full bg-white/10 p-1">
+                    <span class="font-bold text-lg sm:text-xl tracking-tight text-white hidden xs:block">BotSolutions</span>
                 </div>
                 <div>
-                    <a href="#contacto" class="inline-flex items-center justify-center px-6 py-2.5 border border-transparent text-sm font-medium rounded-full text-white bg-[#4d7efb] hover:bg-blue-600 transition-colors shadow-lg shadow-blue-500/30">
+                    <!-- Ajuste móvil: Botón más compacto en celulares -->
+                    <a href="#contacto" class="inline-flex items-center justify-center px-4 sm:px-6 py-2 sm:py-2.5 border border-transparent text-xs sm:text-sm font-medium rounded-full text-white bg-[#4d7efb] hover:bg-blue-600 transition-colors shadow-lg shadow-blue-500/30">
                         Contáctanos
                     </a>
                 </div>
@@ -43,29 +45,32 @@
     </nav>
 
     <!-- HERO SECTION -->
-    <header class="relative w-full h-[70vh] flex items-center justify-center overflow-hidden">
+    <!-- Ajuste general: Cambiar a min-h-screen y padding top para que nunca se corte -->
+    <header class="relative w-full min-h-screen flex items-center justify-center overflow-hidden pt-28 pb-12">
         <video autoplay loop muted playsinline class="absolute z-0 w-auto min-w-full min-h-full max-w-none object-cover">
             <source src="https://assets.codepen.io/3364143/7btrrd.mp4" type="video/mp4">
         </video>
         <div class="absolute z-10 inset-0 bg-[#0b1121]/60 backdrop-blur-sm"></div>
-        <div class="relative z-20 text-center px-4 max-w-4xl mx-auto mt-24">
-            <h1 class="text-5xl md:text-6xl font-bold tracking-tight mb-2">Soluciones de Chatbots</h1>
-            <h2 class="text-4xl md:text-5xl font-bold mb-6" style="color: #7c9aff;">Automatizados y Eficientes</h2>
+        <div class="relative z-20 text-center px-4 max-w-4xl mx-auto mt-8 sm:mt-12">
+            <!-- Ajuste de tamaño de texto para móviles -->
+            <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight mb-2">Soluciones de Chatbots</h1>
+            <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-6" style="color: #7c9aff;">Automatizados y Eficientes</h2>
             
             <!-- NUEVO TEXTO PERSUASIVO -->
-            <p class="text-lg md:text-xl text-gray-200 mb-6 max-w-3xl mx-auto leading-relaxed">
+            <p class="text-base sm:text-lg md:text-xl text-gray-200 mb-8 max-w-3xl mx-auto leading-relaxed">
                 ¿Las tareas repetitivas te quitan tiempo valioso? <strong>Nosotros tenemos la solución.</strong> Automatizamos tus procesos operativos para que enfoques tu energía en escalar tu negocio. Hacemos que la tecnología trabaje por ti.
             </p>
 
-            <!-- ETIQUETAS TECNOLÓGICAS (BADGES) -->
-            <div class="flex flex-wrap justify-center gap-3 mb-10">
-                <span class="flex items-center gap-2 bg-[#0b1121]/80 border border-[#4d7efb]/40 backdrop-blur-md px-5 py-2.5 rounded-full text-sm font-medium text-green-400 shadow-[0_0_15px_rgba(74,222,128,0.15)]">
+            <!-- ETIQUETAS TECNOLÓGICAS (BADGES) INTERACTIVAS -->
+            <!-- Ajuste: Añadir hover actions (escala y brillo) a los badges para que sean interactivos -->
+            <div class="flex flex-wrap justify-center gap-3 mb-12">
+                <span class="flex items-center gap-2 bg-[#0b1121]/80 border border-[#4d7efb]/40 backdrop-blur-md px-5 py-2.5 rounded-full text-sm font-medium text-green-400 shadow-[0_0_15px_rgba(74,222,128,0.15)] transition-all hover:scale-105 hover:shadow-[0_0_20px_rgba(74,222,128,0.4)] cursor-default">
                     <i class="fab fa-whatsapp text-lg"></i> Bots WhatsApp & Redes
                 </span>
-                <span class="flex items-center gap-2 bg-[#0b1121]/80 border border-[#4d7efb]/40 backdrop-blur-md px-5 py-2.5 rounded-full text-sm font-medium text-blue-400 shadow-[0_0_15px_rgba(96,165,250,0.15)]">
+                <span class="flex items-center gap-2 bg-[#0b1121]/80 border border-[#4d7efb]/40 backdrop-blur-md px-5 py-2.5 rounded-full text-sm font-medium text-blue-400 shadow-[0_0_15px_rgba(96,165,250,0.15)] transition-all hover:scale-105 hover:shadow-[0_0_20px_rgba(96,165,250,0.4)] cursor-default">
                     <i class="fas fa-envelope-open-text text-lg"></i> Automatización de Correos
                 </span>
-                <span class="flex items-center gap-2 bg-[#0b1121]/80 border border-[#4d7efb]/40 backdrop-blur-md px-5 py-2.5 rounded-full text-sm font-medium text-purple-400 shadow-[0_0_15px_rgba(192,132,252,0.15)]">
+                <span class="flex items-center gap-2 bg-[#0b1121]/80 border border-[#4d7efb]/40 backdrop-blur-md px-5 py-2.5 rounded-full text-sm font-medium text-purple-400 shadow-[0_0_15px_rgba(192,132,252,0.15)] transition-all hover:scale-105 hover:shadow-[0_0_20px_rgba(192,132,252,0.4)] cursor-default">
                     <i class="fas fa-database text-lg"></i> Integración con Bases de Datos
                 </span>
             </div>
